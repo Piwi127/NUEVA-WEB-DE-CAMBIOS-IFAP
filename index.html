@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituto de Formación Archivística del Perú - IFAP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="promo-modal" id="promo-modal" aria-hidden="true">
+      <div class="promo-backdrop" data-close="true"></div>
+      <div class="promo-card" role="dialog" aria-modal="true" aria-labelledby="promo-title">
+        <button class="promo-close" type="button" aria-label="Cerrar" data-close="true">×</button>
+        <img class="promo-image" src="hero.jpg" alt="Primer taller IFAP" />
+        <div class="promo-content">
+          <span class="promo-badge">Primer Taller</span>
+          <h3 id="promo-title">Gestión documental digital en instituciones públicas</h3>
+          <p>30 de enero · 7:00 p.m. · Modalidad Zoom</p>
+          <a class="promo-cta" href="#inscripcion">
+            <span class="promo-icon" aria-hidden="true">★</span>
+            INCSRIBETE AQUI
+          </a>
+        </div>
+      </div>
+    </div>
+    <header class="hero" id="inicio">
+      <nav class="navbar">
+        <div class="logo">
+          <span>IFAP</span>
+          <small>Instituto de Formación Archivística del Perú</small>
+        </div>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#inscripcion">Inscripci&oacute;n</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="nav-toggle" type="button" aria-label="Abrir men&uacute;" aria-controls="nav-menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="nav-cta" href="#inscripcion">Inscr&iacute;bete</a>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="pill">Archivística · Perú · Modalidad virtual</span>
+          <h1>Formación Archivística moderna para profesionales del Perú</h1>
+          <p>
+            Somos el nuevo Instituto de Formación Archivística del Perú (IFAP). Ofrecemos
+            charlas, webinars, talleres y capacitaciones de 1 a 3 horas con docentes
+            especializados. Recibe constancia de participación.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#inscripcion">Inscr&iacute;bete ahora</a>
+            <a class="btn ghost" href="#inscripcion">Ver detalles del taller</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h3>+25</h3>
+              <span>Actividades planificadas 2026</span>
+            </div>
+            <div>
+              <h3>100% virtual</h3>
+              <span>Zoom y Google Meet</span>
+            </div>
+            <div>
+              <h3>Constancia</h3>
+              <span>Participación verificada</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card glass">
+          <img class="hero-card-image" src="hero.jpg" alt="Primer taller de IFAP" />
+          <h2>Primer Taller</h2>
+          <p class="date">30 de enero · 7:00 p.m.</p>
+          <p>
+            “Gestión documental digital en instituciones públicas”. Aprende buenas prácticas
+            y herramientas aplicables.
+          </p>
+          <ul>
+            <li>Duración: 2 horas</li>
+            <li>Modalidad: Zoom</li>
+            <li>Constancia digital</li>
+          </ul>
+          <a class="btn accent" href="#inscripcion">Reservar cupo</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section about" id="nosotros">
+      <div class="section-title">
+        <span>Sobre IFAP</span>
+        <h2>Una comunidad que impulsa la archivística en el Perú</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          IFAP nace para fortalecer la gestión documental, el orden archivístico y la
+          preservación de la memoria institucional. Nuestro enfoque es práctico, ágil y
+          actualizado, dirigido a estudiantes, funcionarios públicos y profesionales que
+          buscan mejorar procesos archivísticos.
+        </p>
+        <div class="about-cards">
+          <div class="glass card">
+            <h3>Visión</h3>
+            <p>Ser el referente académico en archivística aplicada a nivel nacional.</p>
+          </div>
+          <div class="glass card">
+            <h3>Misión</h3>
+            <p>Brindar formación corta, útil y de impacto inmediato.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section form-section" id="inscripcion">
+      <div class="section-title">
+        <span>Inscripciones</span>
+        <h2>Inscr&iacute;bete al primer taller</h2>
+      </div>
+      <div class="form-layout">
+        <div class="form-info">
+          <h3>Reserva tu cupo en minutos</h3>
+          <p>
+            Inscr&iacute;bete inmediatamente para asegurar tu cupo en el taller. Recibirás el link de acceso
+            a Zoom o Meet en tu correo y constancia de participación al finalizar.
+          </p>
+          <ul>
+            <li>Duración máxima: 3 horas</li>
+            <li>Modalidad virtual · Lima</li>
+            <li>Constancia digital sin costo adicional</li>
+          </ul>
+        </div>
+        <form class="inscription-form" id="contactForm" aria-label="Formulario de inscripción">
+          <div class="form-grid">
+            <label>
+              Nombres completos
+              <input type="text" id="nombre" name="nombre" placeholder="Ingresa tus nombres" required />
+            </label>
+            <label>
+              Correo electrónico
+              <input type="email" id="correo" name="correo" placeholder="tucorreo@dominio.com" required />
+            </label>
+            <label>
+              Celular / WhatsApp
+              <input type="tel" id="telefono" name="telefono" placeholder="947 872 207" required />
+            </label>
+            <label>
+              Evento de interés
+              <select id="evento" name="evento" required>
+                <option value="">Selecciona el taller</option>
+                <option>Gesti&oacute;n documental digital en instituciones p&uacute;blicas</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Comentarios
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntanos tu interés"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Enviar inscripción</button>
+          <p class="form-note">
+            Al enviar tu inscripción recibirás un correo con el link de acceso. Solo se
+            entrega constancia de participación.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section carousel-section" aria-label="Carrusel de eventos">
+      <div class="section-title">
+        <span>Promociones</span>
+        <h2>Experiencias formativas en imágenes</h2>
+      </div>
+      <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+        <div class="carousel-track">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80"
+              alt="Participantes en webinar"
+            />
+            <div class="carousel-caption">
+              Webinars con interacción en vivo y resolución de dudas.
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80"
+              alt="Trabajo colaborativo"
+            />
+            <div class="carousel-caption">
+              Talleres prácticos y colaborativos para equipos archivísticos.
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1400&q=80"
+              alt="Sesión virtual"
+            />
+            <div class="carousel-caption">
+              Capacitaciones virtuales con docentes especializados.
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
+
+    <section class="section benefits">
+      <div class="section-title">
+        <span>Beneficios</span>
+        <h2>¿Por qué participar en IFAP?</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="card">
+          <h3>Aprendizaje práctico</h3>
+          <p>Contenido aplicable desde el primer día en tu institución.</p>
+        </div>
+        <div class="card">
+          <h3>Actualización constante</h3>
+          <p>Temáticas alineadas con la normativa archivística vigente.</p>
+        </div>
+        <div class="card">
+          <h3>Comunidad profesional</h3>
+          <p>Conecta con especialistas y colegas del sector público y privado.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section instructor">
+      <div class="section-title">
+        <span>Docente</span>
+        <h2>Especialista invitado</h2>
+      </div>
+      <div class="instructor-card glass">
+        <div>
+          <h3>Docente especialista en Archivística</h3>
+          <p>
+            Profesional con amplia experiencia en gestión documental, implementación de
+            archivos digitales y asesoría institucional.
+          </p>
+        </div>
+        <div class="badge">+10 años de experiencia</div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="section-title">
+        <span>Contacto</span>
+        <h2>Estamos listos para ayudarte</h2>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <h3>Instituto de Formación Archivística del Perú - IFAP</h3>
+          <p>Modalidad 100% virtual · Lima</p>
+          <p>Se brindará link de ingreso a Zoom o Meet.</p>
+        </div>
+        <div class="contact-cards">
+          <div class="card">
+            <h4>Correo</h4>
+            <p>amgelcv1@gmail.com</p>
+          </div>
+          <div class="card">
+            <h4>Teléfono</h4>
+            <p>947 872 207</p>
+          </div>
+          <div class="card">
+            <h4>WhatsApp</h4>
+            <p>947 872 207</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 IFAP - Instituto de Formación Archivística del Perú. Todos los derechos reservados.</p>
+    </footer>
+
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/51947872207?text=Quisiera%20mayor%20informaci%C3%B3n%20sobre%20el%20taller%20por%20favor"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Abrir WhatsApp"
+    >
+      <img class="whatsapp-icon" src="whatsappicono.png" alt="WhatsApp" />
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
