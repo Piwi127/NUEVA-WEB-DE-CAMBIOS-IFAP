@@ -164,7 +164,7 @@ img {
 
 .hero {
   background: linear-gradient(120deg, rgba(10, 26, 46, 0.88) 0%, rgba(14, 38, 70, 0.88) 50%, rgba(43, 111, 243, 0.85) 100%),
-    url("imagen1.jpeg") center/cover no-repeat;
+    url("../images/imagen1.jpeg") center/cover no-repeat;
   color: white;
   padding: 40px 8%;
   position: relative;
