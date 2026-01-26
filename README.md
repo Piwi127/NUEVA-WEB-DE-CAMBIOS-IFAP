@@ -1,6 +1,6 @@
 # IFAP - NUEVA WEB DE CAMBIOS
 
-Sitio web moderno para el Instituto de Formacion Archivistica del Peru (IFAP). Incluye portada, secciones informativas, formulario conectado a Google Sheets, menu movil, popup promocional y boton flotante de WhatsApp.
+Sitio web moderno para el Instituto de Formación Archivística del Perú (IFAP). Incluye portada, secciones informativas, formulario conectado a Google Sheets, menú móvil, popup promocional y botón flotante de WhatsApp.
 
 ## Demo local
 Abre `index.html` en tu navegador.
@@ -20,15 +20,15 @@ index.html
 ```
 
 ## Funcionalidades principales
-- Diseno premium y totalmente responsivo.
-- Menu movil tipo hamburguesa.
-- Efectos hover en tarjetas e imagenes.
+- Diseño premium y totalmente responsivo.
+- Menú móvil tipo hamburguesa.
+- Efectos hover en tarjetas e imágenes.
 - Popup promocional con imagen del primer taller.
 - Formulario conectado a Google Sheets.
 - Boton flotante de WhatsApp con animacion.
 
 ## Formulario a Google Sheets
-El formulario envia los datos a un Google Sheet usando Apps Script (Web App).
+El formulario envía los datos a un Google Sheet usando Apps Script (Web App).
 
 ### Campos enviados
 - nombre
@@ -61,7 +61,7 @@ function doPost(e) {
 ```
 
 3) Guarda
-4) **Implementar -> Nueva implementacion -> Web app**
+4) **Implementar -> Nueva implementación -> Web app**
    - Ejecutar como: Tu
    - Acceso: Cualquiera
 5) Copia la URL del Web App
@@ -73,24 +73,24 @@ const WEBAPP_URL = "TU_URL_AQUI";
 ```
 
 ## WhatsApp
-El boton flotante de WhatsApp esta configurado con este mensaje:
-"Quisiera mayor informacion sobre el taller por favor"
+El botón flotante de WhatsApp está configurado con este mensaje:
+"Quisiera mayor información sobre el taller por favor"
 
-Para cambiar el numero o el texto, edita este enlace en `index.html`:
+Para cambiar el número o el texto, edita este enlace en `index.html`:
 ```
 https://wa.me/51947872207?text=Quisiera%20mayor%20informaci%C3%B3n%20sobre%20el%20taller%20por%20favor
 ```
 
 ## Popup promocional
-El popup se abre al cargar la web y muestra `hero2.png` con un llamado a la accion.
+El popup se abre al cargar la web y muestra `hero2.png` con un llamado a la acción.
 Puedes editar el contenido en `index.html` buscando:
 ```
 <div class="promo-modal" id="promo-modal">
 ```
 
 ## Notas
-- Si pruebas el formulario desde `file://`, no veras respuesta del servidor (CORS). El envio se realiza igual.
+- Si pruebas el formulario desde `file://`, no verás respuesta del servidor (CORS). El envío se realiza igual.
 - Para pruebas reales, es recomendable publicar el sitio (GitHub Pages, Netlify, etc.).
 
-## Creditos
+## Créditos
 Proyecto web IFAP - 2026
