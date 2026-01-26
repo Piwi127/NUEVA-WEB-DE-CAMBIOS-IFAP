@@ -1,6 +1,6 @@
 # IFAP - NUEVA WEB DE CAMBIOS
 
-Sitio web moderno para el Instituto de Formación Archivística del Perú (IFAP). Incluye portada, secciones informativas, formulario conectado a Google Sheets, menú móvil, popup promocional y botón flotante de WhatsApp.
+Sitio web moderno para el Instituto de Formación Archivística Peruana (IFAP). Incluye portada, secciones informativas, formulario conectado a Google Sheets, menú móvil, popup promocional y botón flotante de WhatsApp.
 
 ## Demo local
 Abre `index.html` en tu navegador.
