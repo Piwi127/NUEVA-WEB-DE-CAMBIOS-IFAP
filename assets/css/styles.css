@@ -673,18 +673,45 @@ img {
   border: 2px solid rgba(28, 109, 208, 0.2);
   box-shadow: 0 24px 50px rgba(12, 24, 44, 0.16);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  isolation: isolate;
 }
 
+.inscription-hero::before,
 .inscription-hero::after {
   content: "";
   position: absolute;
+  border-radius: 24px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.inscription-hero::after {
   inset: 8px;
   border-radius: 18px;
   border: 1px solid rgba(201, 162, 39, 0.35);
   box-shadow: 0 0 0 rgba(201, 162, 39, 0);
   animation: inscriptionGlow 3.2s ease-in-out infinite;
+  z-index: 0;
+}
+
+.inscription-hero::before {
+  inset: -18px;
+  border: 2px solid rgba(43, 111, 243, 0.22);
+  opacity: 0.75;
+  animation: wavePulse 4.2s ease-in-out infinite;
+}
+
+.inscription-hero .wave-ring {
+  position: absolute;
+  inset: -34px;
+  border-radius: 28px;
+  border: 2px solid rgba(201, 162, 39, 0.18);
+  opacity: 0.7;
   pointer-events: none;
+  z-index: -1;
+  animation: wavePulse 4.2s ease-in-out infinite;
+  animation-delay: 1.2s;
 }
 
 .inscription-hero img {
@@ -1063,6 +1090,26 @@ img {
   50% {
     border-color: rgba(201, 162, 39, 0.55);
     box-shadow: 0 0 18px rgba(201, 162, 39, 0.28);
+  }
+}
+
+@keyframes wavePulse {
+  0%,
+  100% {
+    transform: scale(0.98);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inscription-hero::before,
+  .inscription-hero::after,
+  .inscription-hero .wave-ring {
+    animation: none;
   }
 }
 
