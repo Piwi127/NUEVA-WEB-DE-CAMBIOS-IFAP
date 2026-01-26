@@ -106,7 +106,7 @@ if (typingTarget) {
   ];
   const typingSpeed = 70;
   const deletingSpeed = 45;
-  const messageDuration = 15000;
+  const messageDuration = 10000;
   let phraseIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
