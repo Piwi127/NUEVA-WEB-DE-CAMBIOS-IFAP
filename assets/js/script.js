@@ -1,33 +1,7 @@
-const items = document.querySelectorAll(".carousel-item");
-const prevBtn = document.querySelector(".carousel-btn.prev");
-const nextBtn = document.querySelector(".carousel-btn.next");
 const form = document.querySelector("#contactForm");
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav-links a");
 const promoModal = document.querySelector("#promo-modal");
-
-let currentIndex = 0;
-
-const showItem = (index) => {
-  items.forEach((item, i) => {
-    item.classList.toggle("active", i === index);
-  });
-};
-
-const nextItem = () => {
-  currentIndex = (currentIndex + 1) % items.length;
-  showItem(currentIndex);
-};
-
-const prevItem = () => {
-  currentIndex = (currentIndex - 1 + items.length) % items.length;
-  showItem(currentIndex);
-};
-
-nextBtn.addEventListener("click", nextItem);
-prevBtn.addEventListener("click", prevItem);
-
-setInterval(nextItem, 7000);
 
 
 const WEBAPP_URL =
