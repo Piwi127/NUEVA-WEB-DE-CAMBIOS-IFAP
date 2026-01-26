@@ -452,7 +452,58 @@ img {
   font-family: "Poppins", sans-serif;
   font-size: clamp(26px, 3vw, 36px);
   margin-top: 12px;
-  max-width: 720px;
+  max-width: none;
+}
+
+
+.form-section .section-title h2,
+#inscription-typing {
+  font-size: clamp(20px, 2.4vw, 30px);
+  font-weight: 700;
+  color: #000;
+  text-shadow: none;
+}
+
+#inscription-typing {
+  text-transform: none;
+  letter-spacing: normal;
+  font-variant: normal;
+  background: transparent;
+  box-shadow: none;
+  filter: none;
+}
+
+.form-section .section-title h2 {
+  width: 100%;
+  padding: 18px 22px;
+  border-radius: 12px;
+  border: 1px solid #d7dbe5;
+  background-color: #ffffff;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(25, 55, 90, 0.08) 0px,
+    rgba(25, 55, 90, 0.08) 1px,
+    transparent 1px,
+    transparent 28px
+  );
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+}
+
+.typing-text {
+  position: relative;
+  display: inline;
+}
+
+.typing-text::after {
+  content: "";
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: baseline;
+  width: 2px;
+  height: 0.9em;
+  background: currentColor;
+  transform: translateY(0.2em);
+  animation: typingCaret 0.9s steps(1) infinite;
 }
 
 .section.about .section-title h2 {
@@ -1093,6 +1144,16 @@ img {
   }
 }
 
+@keyframes typingCaret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 @keyframes wavePulse {
   0%,
   100% {
@@ -1109,6 +1170,10 @@ img {
   .inscription-hero::before,
   .inscription-hero::after,
   .inscription-hero .wave-ring {
+    animation: none;
+  }
+
+  .typing-text::after {
     animation: none;
   }
 }
@@ -1218,6 +1283,11 @@ img {
 
   .hero-stats {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .form-section .section-title h2,
+  #inscription-typing {
+    font-size: clamp(18px, 6vw, 24px);
   }
 
   .instructor-card {
