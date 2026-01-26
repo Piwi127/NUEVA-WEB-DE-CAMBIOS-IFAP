@@ -97,22 +97,15 @@ if (promoModal) {
   });
 }
 
-const typingTarget = document.querySelector("#inscription-typing");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-if (typingTarget) {
-  const phrases = [
-    "Inscr\u00edbete al primer taller.",
-    "IFAP - Instituto de Formaci\u00f3n Archiv\u00edstica Peruana.",
-  ];
+const startTyping = ({ target, phrases, messageDuration }) => {
   const typingSpeed = 70;
   const deletingSpeed = 45;
-  const messageDuration = 10000;
   let phraseIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
   let messageStart = 0;
-
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const typeLoop = () => {
     const currentPhrase = phrases[phraseIndex];
@@ -122,7 +115,7 @@ if (typingTarget) {
         messageStart = performance.now();
       }
       charIndex += 1;
-      typingTarget.textContent = currentPhrase.slice(0, charIndex);
+      target.textContent = currentPhrase.slice(0, charIndex);
 
       if (charIndex >= currentPhrase.length) {
         isDeleting = true;
@@ -137,7 +130,7 @@ if (typingTarget) {
     }
 
     charIndex -= 1;
-    typingTarget.textContent = currentPhrase.slice(0, charIndex);
+    target.textContent = currentPhrase.slice(0, charIndex);
 
     if (charIndex <= 0) {
       isDeleting = false;
@@ -150,8 +143,31 @@ if (typingTarget) {
   };
 
   if (prefersReducedMotion) {
-    typingTarget.textContent = phrases[0];
+    target.textContent = phrases[0];
   } else {
     typeLoop();
   }
+};
+
+const typingTarget = document.querySelector("#inscription-typing");
+
+if (typingTarget) {
+  startTyping({
+    target: typingTarget,
+    phrases: [
+      "Inscr\u00edbete al primer taller.",
+      "IFAP - Instituto de Formaci\u00f3n Archiv\u00edstica Peruana.",
+    ],
+    messageDuration: 10000,
+  });
+}
+
+const aboutTypingTarget = document.querySelector("#about-typing");
+
+if (aboutTypingTarget) {
+  startTyping({
+    target: aboutTypingTarget,
+    phrases: ["Una comunidad que impulsa la archiv\u00edstica en el Per\u00fa"],
+    messageDuration: 10000,
+  });
 }
