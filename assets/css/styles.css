@@ -821,6 +821,72 @@ img {
   object-fit: contain;
 }
 
+.whatsapp-label {
+  position: fixed;
+  right: 22px;
+  bottom: 112px;
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.95), rgba(29, 168, 81, 0.95));
+  color: white;
+  font-weight: 700;
+  padding: 11px 18px;
+  border-radius: 999px;
+  box-shadow: 0 16px 32px rgba(10, 20, 45, 0.35);
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+  animation: labelGlow 2.8s ease-in-out infinite, labelSheen 4s ease-in-out infinite;
+  z-index: 20001;
+  overflow: hidden;
+}
+
+.whatsapp-label::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  bottom: -8px;
+  width: 16px;
+  height: 16px;
+  background: inherit;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+.whatsapp-label::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: translateX(-120%);
+}
+
+@keyframes labelGlow {
+  0%,
+  100% {
+    box-shadow: 0 16px 32px rgba(10, 20, 45, 0.35);
+  }
+  50% {
+    box-shadow: 0 22px 44px rgba(37, 211, 102, 0.55);
+  }
+}
+
+@keyframes labelSheen {
+  0% {
+    transform: translateX(-120%);
+  }
+  50%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@media (max-width: 600px) {
+  .whatsapp-label {
+    right: 16px;
+    bottom: 106px;
+    font-size: 13px;
+  }
+}
+
 .whatsapp-fab::after {
   content: "";
   position: absolute;
