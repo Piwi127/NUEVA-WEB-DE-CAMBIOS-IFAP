@@ -13,7 +13,7 @@ assets/
   js/
     script.js
   images/
-    hero.jpg
+    hero2.png
     imagen1.jpeg
     whatsappicono.png
 index.html
@@ -82,7 +82,7 @@ https://wa.me/51947872207?text=Quisiera%20mayor%20informaci%C3%B3n%20sobre%20el%
 ```
 
 ## Popup promocional
-El popup se abre al cargar la web y muestra `hero.jpg` con un llamado a la accion.
+El popup se abre al cargar la web y muestra `hero2.png` con un llamado a la accion.
 Puedes editar el contenido en `index.html` buscando:
 ```
 <div class="promo-modal" id="promo-modal">
