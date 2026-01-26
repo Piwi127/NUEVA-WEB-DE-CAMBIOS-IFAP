@@ -478,6 +478,8 @@ img {
   padding: 18px 22px;
   border-radius: 12px;
   border: 1px solid #d7dbe5;
+  min-height: 84px;
+  line-height: 1.3;
   background-color: #ffffff;
   background-image: repeating-linear-gradient(
     to bottom,
