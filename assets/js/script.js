@@ -1,7 +1,6 @@
 const form = document.querySelector("#contactForm");
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav-links a");
-const promoModal = document.querySelector("#promo-modal");
 
 
 const WEBAPP_URL =
@@ -71,28 +70,6 @@ if (navToggle) {
     if (window.innerWidth > 900) {
       document.body.classList.remove("nav-open");
       navToggle.setAttribute("aria-expanded", "false");
-    }
-  });
-}
-
-if (promoModal) {
-  const openPromo = () => {
-    promoModal.classList.add("is-open");
-    promoModal.setAttribute("aria-hidden", "false");
-  };
-
-  const closePromo = () => {
-    promoModal.classList.remove("is-open");
-    promoModal.setAttribute("aria-hidden", "true");
-  };
-
-  window.addEventListener("load", () => {
-    setTimeout(openPromo, 600);
-  });
-
-  promoModal.addEventListener("click", (event) => {
-    if (event.target.dataset.close === "true") {
-      closePromo();
     }
   });
 }

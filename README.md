@@ -81,13 +81,6 @@ Para cambiar el número o el texto, edita este enlace en `index.html`:
 https://wa.me/51947872207?text=Quisiera%20mayor%20informaci%C3%B3n%20sobre%20el%20taller%20por%20favor
 ```
 
-## Popup promocional
-El popup se abre al cargar la web y muestra `hero2.png` con un llamado a la acción.
-Puedes editar el contenido en `index.html` buscando:
-```
-<div class="promo-modal" id="promo-modal">
-```
-
 ## Notas
 - Si pruebas el formulario desde `file://`, no verás respuesta del servidor (CORS). El envío se realiza igual.
 - Para pruebas reales, es recomendable publicar el sitio (GitHub Pages, Netlify, etc.).
